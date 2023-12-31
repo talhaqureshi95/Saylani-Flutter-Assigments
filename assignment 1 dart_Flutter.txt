@@ -1,0 +1,273 @@
+Q.1: Create two integer variables length and breadth and assign values then
+check if they are square values or rectangle values.
+ie: if both values are equal then it's square otherwise rectangle.
+
+ANSWER:
+
+void main()
+{
+    int length = 5;
+    int breadth = 7;
+
+    if (length == breadth)
+    {
+        print("square!");
+    }
+    else{
+        print("rectangle!");
+    }
+}
+
+
+=========================================================================================
+
+Q.2: Take two variables and store age then using if/else condition to determine oldest and youngest among them.
+
+ANSWER:
+
+void main()
+{
+    var oldAge = 55;
+    var youngAge = 20;
+
+    if(oldAge > youngAge)
+    {
+        print("uncle is the oldest $oldAge");
+        print("man is the youngest $youngAge");
+    }
+    else if(youngAge > oldAge)
+    {
+        print("uncle is the oldest $youngAge");
+        print("man is the youngest $oldAge");
+    }
+    else{
+        "both uncle and man at the same age $oldAge";
+    }
+
+}
+
+=======================================================================
+
+
+Q.3: A student will not be allowed to sit in exam if his/her attendance is less
+than 75%. Create integer variables and assign value:
+Number of classes held = 16,
+Number of classes attended = 10,
+and print percentage of class attended.
+Is student is allowed to sit in exam or not?
+
+
+ANSWER:
+
+void main() {
+  double attendnce = (10 / 16) * 100;
+
+  if (attendnce < 75) {
+    print("Attendance: $attendnce% You're not to allowed to sit in exam, your attendance $attendnce % is less than 75%");
+    
+  }
+}
+
+
+
+=============================================================================
+Q4: Write a program to convert Celsius to Fahrenheit .
+i.e: Temperature in degrees Fahrenheit (°F) = (Temperature in degrees Celsius
+(°C) * 9/5) + 32
+
+ANSWER:
+
+void main()
+{
+    
+
+    double converter_to_celsius = 24;
+    double fahrenheit = (converter_to_celsius * 9/5) + 32;
+    print("$converter_to_celsius degree celsius is equals to $fahrenheit fahrenheit");
+}
+
+
+==============================================================================
+Q.5 Write a program to read temperature in centigrade and display a suitable
+message according to temperature:
+You have num variable temperature = 42;
+Now print the message according to temperature:
+temp < 0 then Freezing weather
+temp 0-10 then Very Cold weather
+temp 10-20 then Cold weather
+temp 20-30 then Normal in Temp
+temp 30-40 then Its Hot
+temp >=40 then Its Very Hot
+
+
+ANSWER:
+
+void main() {
+  double temperature = 42;
+
+  if (temperature < 0) {
+    print("Freezing weather");
+  } else if (temperature >= 0 && temperature <= 10) {
+    print("Very Cold weather");
+  } else if (temperature > 10 && temperature <= 20) {
+    print("Cold weather");
+  } else if (temperature > 20 && temperature <= 30) {
+    print("Normal in Temp");
+  } else if (temperature > 30 && temperature <= 40) {
+    print("It's Hot");
+  } else {
+    print("It's Very Hot");
+  }
+}
+
+==============================================================
+Q.6: Write a program to check whether an alphabet is a vowel or consonant.
+
+ANSWER:
+
+void main() {
+  String alphabet = "a"; 
+
+  alphabet = alphabet.toLowerCase(); 
+
+  if (alphabet == "a" || alphabet == "e" || alphabet == "i" || alphabet == "o" || alphabet == "u") {
+    print("$alphabet is a vowel.");
+  } else {
+    print("$alphabet is a consonant.");
+  }
+}
+
+===============================================================
+
+Q7: Write a program to calculate root of any number.
+i.e: √y = y½
+
+
+ANSWER:
+
+void main()
+{
+    double square_value = 36;
+    double squareRoot = sqrt(square_value);
+    print("The square root of $square_value is $squareRoot");
+}
+
+==================================================================
+
+
+Q8: Create a marksheet using operators of at least 5 subjects and output
+should have Student Name, Student Roll Number, Class, Percentage, Grade
+Obtained etc.
+i.e: Percentage should be rounded upto 2 decimal places only.
+
+
+ANSWER:
+
+void main() {
+  String studentName = "talha";
+  int rollNumber = 9943;
+  String className = "14th Grade";
+
+  int maths = 85;
+  int urdu = 90;
+  int english = 75;
+  int science = 80;
+  int physics = 95;
+
+  int totalMarks = maths + urdu + english + science + physics;
+  double percentage = (totalMarks / 500) * 100;
+  String grade;
+
+  if (percentage >= 90) {
+    grade = "A+";
+  } else if (percentage >= 80) {
+    grade = "A";
+  } else if (percentage >= 70) {
+    grade = "B";
+  } else if (percentage >= 60) {
+    grade = "C";
+  } else if (percentage >= 50) {
+    grade = "D";
+  } else {
+    grade = "Fail";
+  }
+
+  print("Student Name: $studentName");
+  print("Roll Number: $rollNumber");
+  print("Class: $className");
+  print("Maths Marks: $maths");
+  print("Urdu Marks: $urdu");
+  print("English Marks: $english");
+  print("Science Marks: $science");
+  print("Physics Marks: $physics");
+  print("Total Marks: $totalMarks");
+  print("Percentage: ${percentage.toStringAsFixed(2)}%");
+  print("Grade Obtained: $grade");
+}
+
+
+=====================================================================================
+
+Q9: Check if the number is even or odd, If number is even then check if this is
+divisible by 5 or not & if number is odd then check if this is divisible by 7 or not.
+
+
+
+ANSWER:
+
+
+void main() {
+  int number = 20;
+
+  if (number % 2 == 0) {
+    if (number % 5 == 0) {
+      print("$number is even and divisible by 5.");
+    } else {
+      print("$number is even but not divisible by 5.");
+    }
+  } else {
+    if (number % 7 == 0) {
+      print("$number is odd and divisible by 7.");
+    } else {
+      print("$number is odd but not divisible by 7.");
+    }
+  }
+}
+
+
+======================================================================
+
+Q10: Write a program that takes three numbers from the user and prints the
+greatest number & lowest number
+
+
+
+ANSWER:
+
+void main() {
+  int number1 = 10;
+  int number2 = 20; 
+  int number3 = 301;
+
+  int maxNumber = number1;
+  int minNumber = number1;
+
+  if (number2 > maxNumber) {
+    maxNumber = number2;
+  }
+  if (number3 > maxNumber) {
+    maxNumber = number3;
+  }
+
+  if (number2 < minNumber) {
+    minNumber = number2;
+  }
+  if (number3 < minNumber) {
+    minNumber = number3;
+  }
+
+  print("Greatest number: $maxNumber");
+  print("Lowest number: $minNumber");
+}
+
+===========================================================
